@@ -13,5 +13,6 @@ class ofApp : public ofBaseApp{
 		void keyPressed(int key);
 		void keyReleased(int key);
 	private:
-//		LinkedList particles;
+		LinkedList test;
+		ofTrueTypeFont text;
 };

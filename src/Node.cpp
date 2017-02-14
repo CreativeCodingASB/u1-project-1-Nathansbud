@@ -12,7 +12,6 @@
 Node::Node()
 {
   _nextNode = nullptr;
-  _data = new Particle();
 }
 
 Node::~Node()
@@ -27,12 +26,12 @@ Node* Node::GetNext()
   return _nextNode;
 }
 
-Particle& Node::GetData()
+int& Node::GetData()
 {
   return *_data;
 }
 
-Particle Node::GetCopy()
+int Node::GetCopy()
 {
   return *_data;
 }
@@ -46,9 +45,9 @@ void Node::SetNext(Node* &n)
   }
 }
 
-void Node::SetData(Particle& p)
+void Node::SetData(int& p)
 {
-  Particle* garbage = _data;
+  int* garbage = _data;
   _data = &p;
   
   delete garbage;

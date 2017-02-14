@@ -3,35 +3,38 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
   
-  int particleSize = 100;
+  int listSize = 10;
 
-  for(int i = 0; i < particleSize; i++)
+  for(int i = 0; i < listSize; i++)
   {
-//	particles.AddParticle();
+	test.AddData();
   }
+  
+  text.load("arial")
+  text.load("arial.ttf", 15, true, true);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for(int i = 0; i < particles.GetLength(); i++)
-  {
-//	particles.Get(i).Update();
-  }
+//    for(int i = 0; i < particles.GetLength(); i++)
+//  {
+////	particles.Get(i).Update();
+//  }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-  for(int i = 0; i < particles.GetLength(); i++)
-  {
-//	particles.Get(i).Draw();
-  }
+//  for(int i = 0; i < particles.GetLength(); i++)
+//  {
+////	particles.Get(i).Draw();
+//  }
+  text.drawString("Does this work?", 30, 30);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
   if(key == 'a')
   {
-//	particles.~LinkedList();
   }
 }
 

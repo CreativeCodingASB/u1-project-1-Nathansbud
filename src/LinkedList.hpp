@@ -19,10 +19,10 @@ class LinkedList
         LinkedList();
         ~LinkedList();
     
-//        void AddParticle();
+        void AddData();
         void Remove(int index);
-//        void Remove(Data &p);
-//        Particle& Get(int i);
+//        void Remove(int &p);
+        int& Get(int i);
   
         int  GetLength() { return _length; }
     

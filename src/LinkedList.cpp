@@ -16,7 +16,7 @@ LinkedList::LinkedList()
 
 LinkedList::~LinkedList()
 {
-  int maxLength = _length - 1;
+  int maxLength = _length -1;
   for(int i = maxLength; i > 0; i--)
   {
 	Remove(i);
@@ -24,7 +24,7 @@ LinkedList::~LinkedList()
   delete _firstNode;
 }
 
-void LinkedList::AddParticle()
+void LinkedList::AddData()
 {
   Node* currentNode = _firstNode;
   while(currentNode->GetNext())
@@ -64,7 +64,7 @@ void LinkedList::Remove(int index)
   }
 }
 
-Particle& LinkedList::Get(int i)
+int& LinkedList::Get(int i)
 {
   assert(i >= 0 && i < _length);
   

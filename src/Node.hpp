@@ -19,14 +19,14 @@ class Node
         ~Node();
     
         void      SetNext(Node* &n);
-//        void      SetData(Data& p);
+        void      SetData(int& p);
         Node*     GetNext();
-//        Data& GetData();
-//        Data  GetCopy();
+        int& GetData();
+        int  GetCopy();
         void      operator=(const Node& n);
     
     private:
-//        Data* _data;
+		int* _data;
         Node*     _nextNode;
 };
 
