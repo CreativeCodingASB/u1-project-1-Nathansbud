@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "Particle.hpp"
+#include "Sand.hpp"
 
 class Node
 {
@@ -19,14 +20,14 @@ class Node
         ~Node();
     
         void      SetNext(Node* &n);
-        void      SetData(int& p);
+        void      SetData(Sand& p);
         Node*     GetNext();
-        int& GetData();
-        int  GetCopy();
+        Sand&	  GetData();
+        Sand	  GetCopy();
         void      operator=(const Node& n);
     
     private:
-		int* _data;
+		Sand*	  _data;
         Node*     _nextNode;
 };
 

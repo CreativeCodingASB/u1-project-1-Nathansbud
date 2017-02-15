@@ -3,39 +3,37 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
   
-  int listSize = 10;
-
   for(int i = 0; i < listSize; i++)
   {
 	test.AddData();
   }
   
-  text.load("arial")
-  text.load("arial.ttf", 15, true, true);
+//  text.load("arial.ttf", 15, true, true);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-//    for(int i = 0; i < particles.GetLength(); i++)
-//  {
-////	particles.Get(i).Update();
-//  }
+    for(int i = 0; i < test.GetLength(); i++)
+  {
+//	test.Get(i).Update();
+  }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-//  for(int i = 0; i < particles.GetLength(); i++)
-//  {
-////	particles.Get(i).Draw();
-//  }
-  text.drawString("Does this work?", 30, 30);
+
+  for(int i = 0; i < test.GetLength(); i++)
+  {
+	test.Get(i).Draw();
+  }
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-  if(key == 'a')
-  {
-  }
+//  if(key == 'a')
+//  {
+//	sand.~Sand();
+//  }
 }
 
 //--------------------------------------------------------------

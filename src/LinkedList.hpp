@@ -11,7 +11,8 @@
 
 #include <stdio.h>
 #include "Node.hpp"
-#include "Particle.hpp"
+//#include "Particle.hpp"
+#include "Sand.hpp"
 
 class LinkedList
 {
@@ -22,7 +23,7 @@ class LinkedList
         void AddData();
         void Remove(int index);
 //        void Remove(int &p);
-        int& Get(int i);
+        Sand& Get(int i);
   
         int  GetLength() { return _length; }
     

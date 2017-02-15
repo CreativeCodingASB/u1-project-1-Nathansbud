@@ -64,7 +64,7 @@ void LinkedList::Remove(int index)
   }
 }
 
-int& LinkedList::Get(int i)
+Sand& LinkedList::Get(int i)
 {
   assert(i >= 0 && i < _length);
   

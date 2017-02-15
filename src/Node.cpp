@@ -26,12 +26,12 @@ Node* Node::GetNext()
   return _nextNode;
 }
 
-int& Node::GetData()
+Sand& Node::GetData()
 {
   return *_data;
 }
 
-int Node::GetCopy()
+Sand Node::GetCopy()
 {
   return *_data;
 }
@@ -45,9 +45,9 @@ void Node::SetNext(Node* &n)
   }
 }
 
-void Node::SetData(int& p)
+void Node::SetData(Sand& p)
 {
-  int* garbage = _data;
+  Sand* garbage = _data;
   _data = &p;
   
   delete garbage;

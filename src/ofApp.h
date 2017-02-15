@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "LinkedList.hpp"
+#include "Sand.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -15,4 +16,7 @@ class ofApp : public ofBaseApp{
 	private:
 		LinkedList test;
 		ofTrueTypeFont text;
+		Sand sand;
+		int listSize = 10;
+
 };

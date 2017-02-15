@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		135A801FA0F346BC4F5873D2 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3016AE08601C0FF4307D6B /* Node.cpp */; };
+		BFCB2ED51E54B6D900CB75AB /* Sand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCB2ED31E54B6D900CB75AB /* Sand.cpp */; };
 		C6792CBAAA54D5A713D25ADF /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9AA5FD1EDF04CD1F5FB1686 /* Particle.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		234C6D66D7920557D3FC7EF1 /* Particle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Particle.hpp; path = src/Particle.hpp; sourceTree = SOURCE_ROOT; };
 		42E8F9D14443D134187E2E20 /* LinkedList.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LinkedList.cpp; path = src/LinkedList.cpp; sourceTree = SOURCE_ROOT; };
+		BFCB2ED31E54B6D900CB75AB /* Sand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sand.cpp; sourceTree = "<group>"; tabWidth = 5; };
+		BFCB2ED41E54B6D900CB75AB /* Sand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sand.hpp; sourceTree = "<group>"; };
 		D5703137AF8F134A77167BAD /* Node.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Node.hpp; path = src/Node.hpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../Documents/openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* U1-Project-1-NathansbudDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "U1-Project-1-NathansbudDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +123,8 @@
 				D5703137AF8F134A77167BAD /* Node.hpp */,
 				E9AA5FD1EDF04CD1F5FB1686 /* Particle.cpp */,
 				234C6D66D7920557D3FC7EF1 /* Particle.hpp */,
+				BFCB2ED31E54B6D900CB75AB /* Sand.cpp */,
+				BFCB2ED41E54B6D900CB75AB /* Sand.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -223,6 +228,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				EF142F048BAFB62326DDEBE9 /* LinkedList.cpp in Sources */,
+				BFCB2ED51E54B6D900CB75AB /* Sand.cpp in Sources */,
 				135A801FA0F346BC4F5873D2 /* Node.cpp in Sources */,
 				C6792CBAAA54D5A713D25ADF /* Particle.cpp in Sources */,
 			);
