@@ -13,10 +13,19 @@ class ofApp : public ofBaseApp{
 
 		void keyPressed(int key);
 		void keyReleased(int key);
+		
+		void mousePressed(int x, int y, int button);
+		void mouseReleased(int x, int y, int button);
+		
+		void checkDistance();
+		
+		ofVec2f mousePos = ofVec2f(mouseX, mouseY);
+  
 	private:
-		LinkedList test;
+		LinkedList test = LinkedList(ofVec2f(mouseX, mouseY));
 		ofTrueTypeFont text;
-		Sand sand;
+		Sand sand = Sand(ofVec2f(mouseX, mouseY));
 		int listSize = 10;
+		bool upressedbro, addSand;
 
 };

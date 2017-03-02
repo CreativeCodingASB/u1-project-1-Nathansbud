@@ -9,9 +9,10 @@
 #include "Node.hpp"
 #include "ofMain.h"
 
-Node::Node()
+Node::Node(ofVec2f mousePos)
 {
   _nextNode = nullptr;
+  _data = new Sand(mousePos);
 }
 
 Node::~Node()
@@ -38,11 +39,9 @@ Sand Node::GetCopy()
 
 void Node::SetNext(Node* &n)
 {
-  if(!_nextNode)
-  {
+
 	_nextNode = n;
 	return;
-  }
 }
 
 void Node::SetData(Sand& p)

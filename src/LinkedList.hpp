@@ -11,18 +11,17 @@
 
 #include <stdio.h>
 #include "Node.hpp"
-//#include "Particle.hpp"
 #include "Sand.hpp"
 
 class LinkedList
 {
     public:
-        LinkedList();
+        LinkedList(ofVec2f mousePos);
         ~LinkedList();
     
-        void AddData();
+        void AddData(ofVec2f mousePos);
         void Remove(int index);
-//        void Remove(int &p);
+		void Clear();
         Sand& Get(int i);
   
         int  GetLength() { return _length; }

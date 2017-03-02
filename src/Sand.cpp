@@ -9,27 +9,53 @@
 #include "Sand.hpp"
 #include "ofMain.h"
 
-Sand::Sand()
+Sand::Sand(ofVec2f sandPosition)
 {
-  float posX = ofGetWidth(), posY = ofGetHeight();
+//  float posX = ofRandomWidth(), posY = ofRandomHeight();
+  ofColor sandColor(ofRandom(255), ofRandom(255), ofRandom(255));
+  ofSetColor(sandColor);
+  ofFill();
+  sandPos.set(sandPosition);
   grav.set(0, 10);
-  sandPos.set(ofRandom(posX), ofRandom(posY));
-  std::cout << "You made a thing and it's here did it work please say yes? Oh wait the thing is at " << sandPos;
+//  std::cout << "You made a thing and it's here did it work please say yes? Oh wait the thing is at " << sandPos << " and gravity is" << grav;
 }
 
 Sand::~Sand()
 {
-//  delete &sandPos;
 }
+
+//void Sand::SetPosition(ofVec2f mousePosition)
+//{
+//  sandPos.set(mousePosition);
+//}
 
 void Sand::Draw()
 {
-  ofSetColor(255, 0, 255);
   ofFill();
   ofDrawCircle(sandPos, radius);
 }
 
 void Sand::Update()
 {
+  Move();
+  Draw();
+}
+
+void Sand::SetPos(ofVec2f sandPosition)
+{
+  sandPos.set(sandPosition);
+}
+
+void Sand::SetColor()
+{
+}
+
+void Sand::Move()
+{
   sandPos += grav;
+  if(sandPos.y > ofGetHeight() - radius)
+  {
+    grav.set(0, 0);
+    sandPos.y = ofGetHeight();
+  }
 }

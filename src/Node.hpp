@@ -16,19 +16,20 @@
 class Node
 {
     public:
-        Node();
+        Node(ofVec2f mousePos);
         ~Node();
     
-        void      SetNext(Node* &n);
-        void      SetData(Sand& p);
-        Node*     GetNext();
-        Sand&	  GetData();
-        Sand	  GetCopy();
-        void      operator=(const Node& n);
+        void    SetNext(Node* &n);
+        void    SetData(Sand& s);
+        Node*   GetNext();
+        Sand&	GetData();
+		Sand	GetCopy();
+		void    operator=(const Node& n);
     
-    private:
-		Sand*	  _data;
-        Node*     _nextNode;
+	private:
+		Sand* _data;
+		Node*   _nextNode;
+
 };
 
 #endif /* Node_hpp */

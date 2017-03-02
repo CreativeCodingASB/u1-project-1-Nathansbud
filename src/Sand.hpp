@@ -15,15 +15,22 @@
 class Sand
 {
   public:
-	Sand();
+	Sand(ofVec2f mousePos);
 	~Sand();
   
 	void Draw();
 	void Update();
-  
+	void Move();
+	void SetPos(ofVec2f sandPos);
+	
+	void SetColor();
+	
+	int GetRadius() {return radius;}
+	ofVec2f GetPos() {return sandPos;}
+	ofVec2f grav;
+	
   private:
 	ofVec2f sandPos;
-	ofVec2f grav;
 	int radius = 5;
 };
 
